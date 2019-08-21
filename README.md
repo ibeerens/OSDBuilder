@@ -4,14 +4,13 @@ Use the following steps to create a new Windows 10 ISO image with the latest cum
 
 Requirements:
 - Use a Windows 10 platform
-- Install the latest ADK
+- Install the latest Windows 10 1809 ADK
 
 ## Install OSDBuilder
 
 Open PowerShell (Admin) 
-
-    Install-Module OSDBuilder -Force
     Set-ExecutionPolicy ByPass
+    Install-Module OSDBuilder -Force
     Import-Module OSDBuilder -Force
 
 Create a folder for OSDBuilder
@@ -30,7 +29,7 @@ Import the mounted ISO
     
     Import-OSMedia
 
-Select the version to use. For the Enterprise version this is 3. 
+Select the index version to use. For the Enterprise version this is 3. 
 Inject the latest cumulative updates available
     
     Update-OSMedia -Download -Execute
