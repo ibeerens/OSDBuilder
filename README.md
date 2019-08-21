@@ -24,6 +24,9 @@ Create the OSDBuilder folder structure
     
     Get-OSBuilder -CreatePaths
 
+Optional: OneDrive production
+    Get-DownOSDBuilder -ContentDownload 'OneDriveSetup Production'
+
 Mount the Windows 10 ISO
 Import the mounted ISO
     
