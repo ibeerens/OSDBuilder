@@ -8,14 +8,16 @@ Requirements:
 
 ## Install OSDBuilder
 
-Open PowerShell (Admin) 
-    Set-ExecutionPolicy ByPass
+Open PowerShell (Admin):
+
+    Set-ExecutionPolicy ByPass -Force
     Install-Module OSDBuilder -Force
     Import-Module OSDBuilder -Force
 
 Create a folder for OSDBuilder
 
     mkdir d:\OSDBuilder
+
 Set the path location
 
     Get-OSDBuilder -setpath d:\OSDBuilder
@@ -25,6 +27,7 @@ Create the OSDBuilder folder structure
     Get-OSBuilder -CreatePaths
 
 Optional: OneDrive production
+
     Get-DownOSDBuilder -ContentDownload 'OneDriveSetup Production'
 
 Mount the Windows 10 ISO
